@@ -8,5 +8,15 @@ add_executable(untitled12
         Circle.h
         Rectangle.cpp
         Rectangle.h
+        Hotel.cpp
+        Hotel.h
+        Address.cpp
+        Address.h
+        Menu.cpp
+        Menu.h
+        Rooms.cpp
+        Rooms.h
+        Search.cpp
+        Search.h
 
 )
