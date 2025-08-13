@@ -11,11 +11,14 @@
 
 class Search {
     std::vector<Rooms> rooms;
-public:Rooms getRooms(int roomNumber);
-public:Rooms getRooms();
+public:Search(vector<Rooms> rooms);
+
+public:vector<Rooms> getRooms(int person);
+
     public:void showSearch();
 
 };
+
 
 
 

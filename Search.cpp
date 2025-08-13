@@ -5,31 +5,36 @@
 #include "Search.h"
 
 #include <iostream>
-#include <__ostream/basic_ostream.h>
 #include <ctime>
+Search::Search(vector<Rooms> rooms)
+{
+    this->rooms = rooms;
+}
 
 void Search::showSearch()
 {
-    int days;
+
     int person;
-    time_t enter;
-    time_t exit;
-    cout <<"Enter number of days";
-    cin >> days;
     cout <<"Enter number of person";
     cin >> person;
-    cout <<"Enter check-in date";
-    cin >> enter;
-    cout <<"Enter check-out date";
-    cin >> exit;
+    vector<Rooms> list = getRooms(person);
+    for (int i = 0; i < list.size(); i++)
+    {
+        cout << list.at(i).getRoomNumber() << " "<<list.at(i).getRoomStyle()<< endl;
+    }
+
+
+
 }
-Rooms Search::getRooms(int roomNumber)
+vector<Rooms> Search::getRooms(int person)
 {
+    vector<Rooms> avalable;
     for (Rooms room : rooms)
     {
-        if (room.getRoomNumber() == roomNumber)
+        if (room.getStatus() && room.getPersonNumber()==person)
         {
-            return room;
+            avalable.push_back(room);
         }
     }
+    return avalable;
 }

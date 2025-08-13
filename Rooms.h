@@ -10,13 +10,16 @@ using namespace std;
 class Rooms {
     private:int roomNumber;
 private:string roomStyle;
-private:string status;
+private:bool status;
 private:double bookingPrice;
 private:int personNumber;
 
-public:Rooms(int roomNumber, string roomStyle, string status, double bookingPrice, int personNumber);
+public:Rooms(int roomNumber, string roomStyle, bool status, double bookingPrice, int personNumber);
 
     int getRoomNumber();
+    bool getStatus();
+    int getPersonNumber();
+    string getRoomStyle();
 };
 
 

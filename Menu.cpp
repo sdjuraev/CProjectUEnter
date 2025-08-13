@@ -23,8 +23,8 @@ void Menu::display()
     case 1:
         {
             cout << "Search" << endl;
-            Search search;
-            search.showSearch();
+
+
         }
         break;
     case 2:

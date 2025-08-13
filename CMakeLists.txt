@@ -4,10 +4,6 @@ set(CMAKE_CXX_STANDARD 17)
 
 add_executable(untitled12
         main.cpp
-        Circle.cpp
-        Circle.h
-        Rectangle.cpp
-        Rectangle.h
         Hotel.cpp
         Hotel.h
         Address.cpp
@@ -18,5 +14,7 @@ add_executable(untitled12
         Rooms.h
         Search.cpp
         Search.h
+        Person.cpp
+        Person.h
 
 )

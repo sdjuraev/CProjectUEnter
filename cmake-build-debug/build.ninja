@@ -55,18 +55,6 @@ build CMakeFiles/untitled12.dir/main.cpp.o: CXX_COMPILER__untitled12_unscanned_D
   OBJECT_DIR = CMakeFiles/untitled12.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled12.dir
 
-build CMakeFiles/untitled12.dir/Circle.cpp.o: CXX_COMPILER__untitled12_unscanned_Debug /Users/macbookair/CLionProjects/untitled12/Circle.cpp || cmake_object_order_depends_target_untitled12
-  DEP_FILE = CMakeFiles/untitled12.dir/Circle.cpp.o.d
-  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -mmacosx-version-min=15.2 -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/untitled12.dir
-  OBJECT_FILE_DIR = CMakeFiles/untitled12.dir
-
-build CMakeFiles/untitled12.dir/Rectangle.cpp.o: CXX_COMPILER__untitled12_unscanned_Debug /Users/macbookair/CLionProjects/untitled12/Rectangle.cpp || cmake_object_order_depends_target_untitled12
-  DEP_FILE = CMakeFiles/untitled12.dir/Rectangle.cpp.o.d
-  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -mmacosx-version-min=15.2 -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/untitled12.dir
-  OBJECT_FILE_DIR = CMakeFiles/untitled12.dir
-
 build CMakeFiles/untitled12.dir/Hotel.cpp.o: CXX_COMPILER__untitled12_unscanned_Debug /Users/macbookair/CLionProjects/untitled12/Hotel.cpp || cmake_object_order_depends_target_untitled12
   DEP_FILE = CMakeFiles/untitled12.dir/Hotel.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -mmacosx-version-min=15.2 -fcolor-diagnostics
@@ -97,6 +85,12 @@ build CMakeFiles/untitled12.dir/Search.cpp.o: CXX_COMPILER__untitled12_unscanned
   OBJECT_DIR = CMakeFiles/untitled12.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled12.dir
 
+build CMakeFiles/untitled12.dir/Person.cpp.o: CXX_COMPILER__untitled12_unscanned_Debug /Users/macbookair/CLionProjects/untitled12/Person.cpp || cmake_object_order_depends_target_untitled12
+  DEP_FILE = CMakeFiles/untitled12.dir/Person.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -mmacosx-version-min=15.2 -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/untitled12.dir
+  OBJECT_FILE_DIR = CMakeFiles/untitled12.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target untitled12
@@ -105,7 +99,7 @@ build CMakeFiles/untitled12.dir/Search.cpp.o: CXX_COMPILER__untitled12_unscanned
 #############################################
 # Link the executable untitled12
 
-build untitled12: CXX_EXECUTABLE_LINKER__untitled12_Debug CMakeFiles/untitled12.dir/main.cpp.o CMakeFiles/untitled12.dir/Circle.cpp.o CMakeFiles/untitled12.dir/Rectangle.cpp.o CMakeFiles/untitled12.dir/Hotel.cpp.o CMakeFiles/untitled12.dir/Address.cpp.o CMakeFiles/untitled12.dir/Menu.cpp.o CMakeFiles/untitled12.dir/Rooms.cpp.o CMakeFiles/untitled12.dir/Search.cpp.o
+build untitled12: CXX_EXECUTABLE_LINKER__untitled12_Debug CMakeFiles/untitled12.dir/main.cpp.o CMakeFiles/untitled12.dir/Hotel.cpp.o CMakeFiles/untitled12.dir/Address.cpp.o CMakeFiles/untitled12.dir/Menu.cpp.o CMakeFiles/untitled12.dir/Rooms.cpp.o CMakeFiles/untitled12.dir/Search.cpp.o CMakeFiles/untitled12.dir/Person.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -mmacosx-version-min=15.2
   OBJECT_DIR = CMakeFiles/untitled12.dir
   POST_BUILD = :

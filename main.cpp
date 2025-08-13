@@ -3,13 +3,28 @@
 
 #include <iostream>
 
-#include "Circle.h"
+
 #include "Menu.h"
+#include "Person.h"
+#include "Search.h"
+#include "Rooms.h"
 using namespace std;
-#include "Rectangle.h"
+
 
 int main()
 {
-   Menu menu;
-   menu.display();
+ vector<Rooms> rooms;
+ Rooms r1 = Rooms(111, "Eco",true, 333, 1);
+ Rooms r2 = Rooms(112, "Eco",false, 333, 2);
+ Rooms r3 = Rooms(113, "Eco",true, 333, 3);
+ Rooms r4 = Rooms(114, "Eco",false, 333, 4);
+ Rooms r5 = Rooms(115, "Eco",true, 333, 2);
+ rooms.push_back(r1);
+ rooms.push_back(r2);
+ rooms.push_back(r3);
+ rooms.push_back(r4);
+ rooms.push_back(r5);
+ Search search(rooms);
+search.showSearch();
+
 }
