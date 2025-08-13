@@ -10,15 +10,15 @@
 
 
 class Search {
-    std::vector<Rooms> rooms;
-public:Search(vector<Rooms> rooms);
+private:Rooms * rooms;
+public:Search(Rooms *rooms);
 
 public:vector<Rooms> getRooms(int person);
-
-    public:void showSearch();
+public:void showSearch();
+public:void book(int roomNumber);
+public:void showAllRooms();
 
 };
-
 
 
 

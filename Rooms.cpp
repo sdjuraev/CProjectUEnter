@@ -33,3 +33,7 @@ double Rooms::getBookingPrice()
 {
     return bookingPrice;
 }
+void Rooms::setStatus(bool status)
+{
+    this->status = status;
+}

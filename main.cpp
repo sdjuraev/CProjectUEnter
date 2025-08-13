@@ -24,7 +24,7 @@ int main()
  rooms.push_back(r3);
  rooms.push_back(r4);
  rooms.push_back(r5);
- Search search(rooms);
+ Search search(rooms.data());
 search.showSearch();
 
 }
