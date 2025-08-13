@@ -20,7 +20,7 @@ void Search::showSearch()
     vector<Rooms> list = getRooms(person);
     for (int i = 0; i < list.size(); i++)
     {
-        cout << list.at(i).getRoomNumber() << " "<<list.at(i).getRoomStyle()<< endl;
+        cout << list.at(i).getRoomNumber() << " "<<list.at(i).getRoomStyle()<<list.at(i).getPersonNumber()<< endl;
     }
 
 
