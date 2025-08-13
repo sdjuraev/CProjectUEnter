@@ -20,6 +20,7 @@ public:Rooms(int roomNumber, string roomStyle, bool status, double bookingPrice,
     bool getStatus();
     int getPersonNumber();
     string getRoomStyle();
+    double getBookingPrice();
 };
 
 

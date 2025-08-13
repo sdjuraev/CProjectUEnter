@@ -29,3 +29,7 @@ string Rooms::getRoomStyle()
 {
     return roomStyle;
 }
+double Rooms::getBookingPrice()
+{
+    return bookingPrice;
+}
