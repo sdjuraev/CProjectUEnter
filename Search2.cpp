@@ -60,7 +60,13 @@ vector<Rooms> Search2::getRooms(int person)
 void Search2::book(int roomNumber) {
     for (Rooms &room: rooms) {
         if (room.getRoomNumber()==roomNumber) {
-            room.setStatus(false);
+            if (room.getStatus())
+            {
+                room.setStatus(false);
+            }else
+            {
+                cout << "This room not available anymore !";
+            }
         }
 
     }

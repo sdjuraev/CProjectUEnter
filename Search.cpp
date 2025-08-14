@@ -16,7 +16,7 @@ void Search::showSearch()
 {
 
     int person;
-    cout <<"Enter number of person";
+    cout <<"Enter number of person ";
     cin >> person;
     vector<Rooms> list = getRooms(person);
     for (int i = 0; i < list.size(); i++)
@@ -34,12 +34,9 @@ void Search::showSearch()
             cout << "Enter number of room";
             cin >> roomNumber;
             book(roomNumber);
-            showAllRooms();
-
-        }else
-        {
 
         }
+        return;
     }
 }
 vector<Rooms> Search::getRooms(int person)
@@ -64,7 +61,6 @@ void Search::book(int roomNumber)
     {
         if (ptr->getRoomNumber()==roomNumber)
         {
-            cout <<"BOOKED";
             ptr->setStatus(false);
             return;
         }

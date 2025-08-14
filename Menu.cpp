@@ -7,6 +7,12 @@
 
 #include "Search.h"
 using namespace std;
+Menu::Menu(Rooms* rooms, Rooms* end)
+{
+    this->r = rooms;
+    this->e = end;
+}
+
 void Menu::display()
 {
     int option;
@@ -22,9 +28,8 @@ void Menu::display()
     {
     case 1:
         {
-            cout << "Search" << endl;
-
-
+            Search search(r,e);
+            search.showSearch();
         }
         break;
     case 2:

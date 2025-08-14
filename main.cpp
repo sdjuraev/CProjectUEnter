@@ -26,9 +26,11 @@ int main()
  rooms.push_back(r3);
  rooms.push_back(r4);
  rooms.push_back(r5);
-
- Search2 search(rooms);
- search.showSearch();
+ while (true)
+ {
+  Menu menu(rooms.data(), rooms.data()+rooms.size());
+  menu.display();
+ }
 
 
 }
