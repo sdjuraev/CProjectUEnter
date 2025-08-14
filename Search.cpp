@@ -6,9 +6,10 @@
 
 #include <iostream>
 #include <ctime>
-Search::Search(Rooms *rooms)
+Search::Search(Rooms *rooms, Rooms *end)
 {
-    this->rooms = rooms;
+    this->rooms=rooms;
+    this->end=end;
 }
 
 void Search::showSearch()
@@ -44,30 +45,38 @@ void Search::showSearch()
 vector<Rooms> Search::getRooms(int person)
 {
     vector<Rooms> avalable;
-    for (Rooms room : rooms)
+    Rooms *ptr = rooms;
+    for (; ptr!=end; ptr++)
     {
-        if (room.getStatus() && room.getPersonNumber()>=person)
+        if (ptr->getStatus()&& ptr->getPersonNumber()>=person)
         {
-            avalable.push_back(room);
+
+            avalable.push_back(*ptr);
         }
     }
     return avalable;
 }
 void Search::book(int roomNumber)
 {
-    for (Rooms room : rooms)
+    Rooms *ptr = rooms;
+
+    for (; ptr!=end; ++ptr)
     {
-        if (room.getRoomNumber()==roomNumber)
+        if (ptr->getRoomNumber()==roomNumber)
         {
-            cout<<"I am booking this room "<< room.getRoomNumber()<<endl;
-            room.setStatus(false);
+            cout <<"BOOKED";
+            ptr->setStatus(false);
+            return;
         }
     }
+
+
 }
 void Search::showAllRooms()
 {
-    for (Rooms room : rooms)
+    Rooms *ptr = rooms;
+    for (; ptr!=end; ptr++)
     {
-        cout << room.getRoomNumber()<<" "<<room.getStatus()<<endl;
+        cout <<ptr->getRoomNumber()<<" "<<ptr->getStatus()<<endl;
     }
 }

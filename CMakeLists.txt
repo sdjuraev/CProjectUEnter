@@ -16,5 +16,7 @@ add_executable(untitled12
         Search.h
         Person.cpp
         Person.h
+        Search2.cpp
+        Search2.h
 
 )

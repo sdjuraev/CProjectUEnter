@@ -10,8 +10,10 @@
 
 
 class Search {
-private:Rooms * rooms;
-public:Search(Rooms *rooms);
+private: Rooms * rooms;
+private:Rooms * end;
+
+public:Search(Rooms *rooms, Rooms * end);
 
 public:vector<Rooms> getRooms(int person);
 public:void showSearch();

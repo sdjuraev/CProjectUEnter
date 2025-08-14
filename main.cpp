@@ -8,6 +8,8 @@
 #include "Person.h"
 #include "Search.h"
 #include "Rooms.h"
+#include "Search2.h"
+
 using namespace std;
 
 
@@ -24,7 +26,9 @@ int main()
  rooms.push_back(r3);
  rooms.push_back(r4);
  rooms.push_back(r5);
- Search search(rooms.data());
-search.showSearch();
+
+ Search2 search(rooms);
+ search.showSearch();
+
 
 }
