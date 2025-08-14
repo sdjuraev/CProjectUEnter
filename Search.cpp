@@ -62,6 +62,7 @@ void Search::book(int roomNumber)
         if (ptr->getRoomNumber()==roomNumber)
         {
             ptr->setStatus(false);
+            cout <<"Room number "<< ptr->getRoomNumber()<<" is booked successfully "<<endl;
             return;
         }
     }
