@@ -46,6 +46,7 @@ void Service::showServiceMenu() {
 }
 
 bool Service::isRoomBooked(int roomNumber) {
+    //new comment
     for (Rooms* ptr = rooms; ptr != end; ++ptr) {
         if (ptr->getRoomNumber() == roomNumber && !ptr->getStatus()) {
             return true;
