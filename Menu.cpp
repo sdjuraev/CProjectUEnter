@@ -33,7 +33,12 @@ void Menu::display()
         }
         break;
     case 2:
-        cout << "Case 2" << endl;
+        {
+          Search search(r,e);
+            search.showAllRooms();
+            search.cancelRoom();
+            search.showAllRooms();
+        }
         break;
     case 3:
         cout << "Case 3" << endl;

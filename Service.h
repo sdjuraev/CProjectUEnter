@@ -2,14 +2,40 @@
 // Created by Macbook M1 Pro 16 on 8/14/25.
 //
 
+
+
+
+
+
 #ifndef SERVICE_H
 #define SERVICE_H
 
+#include <map>
 
+#include "Rooms.h"
+#include <string>
+#include <vector>
 
 class Service {
+private:
+    Rooms* rooms;
+    Rooms* end;
+    std::vector<std::string> foodOrders;
+    int currentRoom;
+    map<string, double> foodList;
 
+public:
+    Service(Rooms* rooms, Rooms* end);
+
+    void showServiceMenu();
+    void orderFood();
+    void requestCleaning();
+
+private:
+    bool isRoomBooked(int roomNumber);
+    void orderFoodRecursive();
 };
+
 
 
 

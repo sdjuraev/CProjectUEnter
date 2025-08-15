@@ -2,6 +2,7 @@
 
 
 #include <iostream>
+#include <map>
 
 
 #include "Cancel.h"
@@ -11,6 +12,7 @@
 #include "Search.h"
 #include "Rooms.h"
 #include "Search2.h"
+#include "Service.h"
 
 using namespace std;
 
@@ -28,7 +30,6 @@ int main()
  rooms.push_back(r3);
  rooms.push_back(r4);
  rooms.push_back(r5);
-
-
-
+ Service service(rooms.data(), rooms.data()+rooms.size());
+ service.showServiceMenu();
 }

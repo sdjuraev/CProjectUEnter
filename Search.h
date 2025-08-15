@@ -19,6 +19,7 @@ public:vector<Rooms> getRooms(int person);
 public:void showSearch();
 public:void book(int roomNumber);
 public:void showAllRooms();
+    public:void cancelRoom();
 
 };
 

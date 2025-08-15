@@ -77,3 +77,19 @@ void Search::showAllRooms()
         cout <<ptr->getRoomNumber()<<" "<<ptr->getStatus()<<endl;
     }
 }
+void Search::cancelRoom()
+{
+    int roomNumber;
+    cout << "Which booking do you want to cancel ?\n Enter room number: " << endl;
+    cin >> roomNumber;
+    Rooms *ptr = rooms;
+    for (; ptr!=end; ptr++)
+    {
+        if (ptr->getRoomNumber()==roomNumber)
+        {
+            ptr->setStatus(true);
+        }
+    }
+}
+
+
