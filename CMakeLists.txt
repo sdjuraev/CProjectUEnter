@@ -18,5 +18,11 @@ add_executable(untitled12
         Person.h
         Search2.cpp
         Search2.h
+        Cancel.cpp
+        Cancel.h
+        CheckOut.cpp
+        CheckOut.h
+        Service.cpp
+        Service.h
 
 )

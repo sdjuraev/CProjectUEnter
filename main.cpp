@@ -4,6 +4,8 @@
 #include <iostream>
 
 
+#include "Cancel.h"
+#include "CheckOut.h"
 #include "Menu.h"
 #include "Person.h"
 #include "Search.h"
@@ -26,11 +28,7 @@ int main()
  rooms.push_back(r3);
  rooms.push_back(r4);
  rooms.push_back(r5);
- while (true)
- {
-  Menu menu(rooms.data(), rooms.data()+rooms.size());
-  menu.display();
- }
+
 
 
 }
