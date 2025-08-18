@@ -1,8 +1,11 @@
 //
-// Created by Macbook M1 Pro 16 on 8/14/25.
+// Created by Windows 10 on 8/14/2025.
 //
 
 #include "CheckOut.h"
+using namespace std;
+#include <iostream>
+#include "string"
 
 void CheckOut::checkout() {
     cout << "Do you want to check out?"<<endl;
@@ -10,8 +13,7 @@ void CheckOut::checkout() {
     cin>>first_answer;
     if (first_answer == "yes") {
         cout << "Amount of money you need to pay is ===> 500$"<< endl;
-    } else
-    {
+    }else {
         return;
     }
 }

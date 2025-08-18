@@ -1,4 +1,10 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -G Ninja -S /Users/macbookair/CLionProjects/untitled12 -B /Users/macbookair/CLionProjects/untitled12/cmake-build-debug
--- Configuring done (0.0s)
+"C:\Program Files\JetBrains\CLion 2025.1.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "MinGW Makefiles" -S D:\CProjectUEnter -B D:\CProjectUEnter\cmake-build-debug
+-- The CXX compiler identification is GNU 13.1.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/JetBrains/CLion 2025.1.3/bin/mingw/bin/g++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (2.3s)
 -- Generating done (0.0s)
--- Build files have been written to: /Users/macbookair/CLionProjects/untitled12/cmake-build-debug
+-- Build files have been written to: D:/CProjectUEnter/cmake-build-debug

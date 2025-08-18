@@ -7,6 +7,8 @@
 
 #include <iostream>
 #include "Address.h"
+#include <vector>
+
 using namespace std;
 class Hotel {
 public:string name;
