@@ -29,7 +29,7 @@ void Service::showServiceMenu() {
     std::cin >> currentRoom;
 
     if (!isRoomBooked(currentRoom)) {
-        std::cout << "❌ Room not found or not booked.\n";
+        std::cout << "Room not found or not booked.\n";
         return;
     }
 
@@ -63,14 +63,14 @@ void Service::orderFood() {
     int select;
     std::cout << "Enter your food orders:\n";
     int counter = 1;
-    for (auto & menu:foodList)
+    for (auto & menu:service)
     {
         cout << counter<<". " << menu.first << "\t" << menu.second << endl;
         counter++;
     }
     //orderFoodRecursive();
 
-    // std::cout << "\n✅ Orders placed for Room " << currentRoom << ":\n";
+    // std::cout << "\n Orders placed for Room " << currentRoom << ":\n";
     // for (auto& item : foodOrders) {
     //     std::cout << "- " << item << "\n";
     // }
@@ -90,5 +90,5 @@ void Service::orderFoodRecursive() {
 }
 
 void Service::requestCleaning() {
-    std::cout << "🧹 Cleaning request for Room " << currentRoom << " has been scheduled.\n";
+    std::cout << "Cleaning request for Room " << currentRoom << " has been scheduled.\n";
 }
