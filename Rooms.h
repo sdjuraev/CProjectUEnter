@@ -6,7 +6,8 @@
 #define ROOMS_H
 #include <string>
 
-#include "Service.h"
+
+#include "ctime"
 
 using namespace std;
 class Rooms {
@@ -15,11 +16,12 @@ private:string roomStyle;
 private:bool status;
 private:double bookingPrice;
 private:int personNumber;
-private:time_t checkInTime;
-private:map<string, double> service;
 
-public:Rooms(int roomNumber, string roomStyle, bool status, double bookingPrice, int personNumber, time_t checkIn, map<string, double> service);
+//private:map<string, double> service;
 
+public:
+    Rooms(int roomNumber, string roomStyle, bool status, double bookingPrice, int personNumber);
+Rooms(int roomNumber, string roomStyle, bool status, double bookingPrice);
     int getRoomNumber();
     bool getStatus();
     int getPersonNumber();

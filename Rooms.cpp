@@ -4,16 +4,24 @@
 
 #include "Rooms.h"
 Rooms::Rooms(int roomNumber, string roomStyle,
-    bool status, double bookingPrice, int personNumber,
-    time_t checkIn, map<string, double> service)
+    bool status, double bookingPrice, int personNumber)
 {
     this->roomNumber = roomNumber;
     this->roomStyle = roomStyle;
     this->status = status;
     this->bookingPrice = bookingPrice;
     this->personNumber = personNumber;
-    this->checkInTime = checkIn;
-    this->service = service;
+
+   // this->service = map<string, double>();
+}
+Rooms::Rooms(int roomNumber, string roomStyle, bool status, double bookingPrice)
+{
+    this->roomNumber = roomNumber;
+    this->roomStyle = roomStyle;
+    this->status = status;
+    this->bookingPrice = bookingPrice;
+    this->personNumber = 0;
+    //this->service = map<string, double>();
 }
 
 int Rooms::getRoomNumber()
