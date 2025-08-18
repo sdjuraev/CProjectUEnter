@@ -6,6 +6,8 @@
 #define ROOMS_H
 #include <string>
 
+#include "Service.h"
+
 using namespace std;
 class Rooms {
     private:int roomNumber;
@@ -13,6 +15,8 @@ private:string roomStyle;
 private:bool status;
 private:double bookingPrice;
 private:int personNumber;
+private:time_t checkInTime;
+private:Service service;
 
 public:Rooms(int roomNumber, string roomStyle, bool status, double bookingPrice, int personNumber);
 

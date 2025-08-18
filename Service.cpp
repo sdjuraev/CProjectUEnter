@@ -2,11 +2,11 @@
 // Created by Windows 10 on 8/14/2025.
 //
 
-#include "Service.h"
+
 
 #include <iostream>
 #include <string>
-#include <bits/ostream.tcc>
+
 
 #include "Service.h"
 #include <iostream>
@@ -19,6 +19,7 @@ Service::Service(Rooms* rooms, Rooms* end) {
     service.insert({"Somsa", 10000});
     service.insert({"Manti", 10000});
     service.insert({"Shashlik", 20000});
+    service.insert({"Cleaning", 10000});
 
 }
 
@@ -28,7 +29,7 @@ void Service::showServiceMenu() {
     std::cin >> currentRoom;
 
     if (!isRoomBooked(currentRoom)) {
-        std::cout << "Room not found or not booked.\n";
+        std::cout << "❌ Room not found or not booked.\n";
         return;
     }
 
@@ -62,14 +63,14 @@ void Service::orderFood() {
     int select;
     std::cout << "Enter your food orders:\n";
     int counter = 1;
-    for (auto & menu:service)
+    for (auto & menu:foodList)
     {
         cout << counter<<". " << menu.first << "\t" << menu.second << endl;
         counter++;
     }
     //orderFoodRecursive();
 
-    // std::cout << "\nOrders placed for Room " << currentRoom << ":\n";
+    // std::cout << "\n✅ Orders placed for Room " << currentRoom << ":\n";
     // for (auto& item : foodOrders) {
     //     std::cout << "- " << item << "\n";
     // }
@@ -89,5 +90,5 @@ void Service::orderFoodRecursive() {
 }
 
 void Service::requestCleaning() {
-    std::cout << "Cleaning request for Room " << currentRoom << " has been scheduled.\n";
+    std::cout << "🧹 Cleaning request for Room " << currentRoom << " has been scheduled.\n";
 }
