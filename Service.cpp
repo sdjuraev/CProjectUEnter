@@ -10,6 +10,7 @@
 
 #include "Service.h"
 #include <iostream>
+#include "Rooms.h"
 
 Service::Service(Rooms* rooms, Rooms* end) {
     this->rooms = rooms;
@@ -63,7 +64,7 @@ void Service::orderFood() {
     int select;
     std::cout << "Enter your food orders:\n";
     int counter = 1;
-    for (auto & menu:foodList)
+    for (auto & menu:service)
     {
         cout << counter<<". " << menu.first << "\t" << menu.second << endl;
         counter++;
@@ -85,7 +86,7 @@ void Service::orderFoodRecursive() {
 
     if (foodItem == "done") return;
 
-    foodOrders.push_back(foodItem);
+
     orderFoodRecursive();
 }
 

@@ -3,15 +3,17 @@
 //
 
 #include "Rooms.h"
-Rooms::Rooms(int roomNumber, string roomStyle, bool status, double bookingPrice, int personNumber)
+Rooms::Rooms(int roomNumber, string roomStyle,
+    bool status, double bookingPrice, int personNumber,
+    time_t checkIn, map<string, double> service)
 {
     this->roomNumber = roomNumber;
     this->roomStyle = roomStyle;
     this->status = status;
     this->bookingPrice = bookingPrice;
     this->personNumber = personNumber;
-
-
+    this->checkInTime = checkIn;
+    this->service = service;
 }
 
 int Rooms::getRoomNumber()

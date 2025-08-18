@@ -15,7 +15,7 @@
 #include "Rooms.h"
 #include <string>
 #include <vector>
-
+using namespace std;
 class Service {
 private:
     Rooms* rooms;

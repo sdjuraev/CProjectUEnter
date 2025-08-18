@@ -16,9 +16,9 @@ private:bool status;
 private:double bookingPrice;
 private:int personNumber;
 private:time_t checkInTime;
-private:Service service;
+private:map<string, double> service;
 
-public:Rooms(int roomNumber, string roomStyle, bool status, double bookingPrice, int personNumber);
+public:Rooms(int roomNumber, string roomStyle, bool status, double bookingPrice, int personNumber, time_t checkIn, map<string, double> service);
 
     int getRoomNumber();
     bool getStatus();
