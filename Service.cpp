@@ -2,11 +2,11 @@
 // Created by Windows 10 on 8/14/2025.
 //
 
-  #include "Service.h"
+
 
 #include <iostream>
 #include <string>
-#include <bits/ostream.tcc>
+
 
 #include "Service.h"
 #include <iostream>
@@ -15,10 +15,11 @@ Service::Service(Rooms* rooms, Rooms* end) {
     this->rooms = rooms;
     this->end = end;
     currentRoom = -1;
-    foodList.insert({"Osh", 45000});
-    foodList.insert({"Somsa", 10000});
-    foodList.insert({"Manti", 10000});
-    foodList.insert({"Shashlik", 20000});
+    service.insert({"Osh", 45000});
+    service.insert({"Somsa", 10000});
+    service.insert({"Manti", 10000});
+    service.insert({"Shashlik", 20000});
+    service.insert({"Cleaning", 10000});
 
 }
 

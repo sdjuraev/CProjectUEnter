@@ -11,6 +11,7 @@ Rooms::Rooms(int roomNumber, string roomStyle, bool status, double bookingPrice,
     this->bookingPrice = bookingPrice;
     this->personNumber = personNumber;
 
+
 }
 
 int Rooms::getRoomNumber()

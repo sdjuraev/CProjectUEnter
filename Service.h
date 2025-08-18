@@ -20,9 +20,8 @@ class Service {
 private:
     Rooms* rooms;
     Rooms* end;
-    std::vector<std::string> foodOrders;
     int currentRoom;
-    map<string, double> foodList;
+    map<string, double> service;
 
 public:
     Service(Rooms* rooms, Rooms* end);

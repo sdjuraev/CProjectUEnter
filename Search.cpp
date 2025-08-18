@@ -66,8 +66,6 @@ void Search::book(int roomNumber)
             return;
         }
     }
-
-
 }
 void Search::showAllRooms()
 {

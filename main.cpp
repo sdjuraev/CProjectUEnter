@@ -30,6 +30,6 @@ int main()
  rooms.push_back(r3);
  rooms.push_back(r4);
  rooms.push_back(r5);
- Service service(rooms.data(), rooms.data()+rooms.size());
- service.showServiceMenu();
+ Menu menu(rooms.data(), rooms.data() + rooms.size());
+ menu.display();
 }
