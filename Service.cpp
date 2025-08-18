@@ -2,7 +2,7 @@
 // Created by Windows 10 on 8/14/2025.
 //
 
-  #include "Service.h"
+#include "Service.h"
 
 #include <iostream>
 #include <string>
@@ -15,10 +15,10 @@ Service::Service(Rooms* rooms, Rooms* end) {
     this->rooms = rooms;
     this->end = end;
     currentRoom = -1;
-    foodList.insert({"Osh", 45000});
-    foodList.insert({"Somsa", 10000});
-    foodList.insert({"Manti", 10000});
-    foodList.insert({"Shashlik", 20000});
+    service.insert({"Osh", 45000});
+    service.insert({"Somsa", 10000});
+    service.insert({"Manti", 10000});
+    service.insert({"Shashlik", 20000});
 
 }
 
@@ -28,7 +28,7 @@ void Service::showServiceMenu() {
     std::cin >> currentRoom;
 
     if (!isRoomBooked(currentRoom)) {
-        std::cout << "❌ Room not found or not booked.\n";
+        std::cout << "Room not found or not booked.\n";
         return;
     }
 
@@ -62,14 +62,14 @@ void Service::orderFood() {
     int select;
     std::cout << "Enter your food orders:\n";
     int counter = 1;
-    for (auto & menu:foodList)
+    for (auto & menu:service)
     {
         cout << counter<<". " << menu.first << "\t" << menu.second << endl;
         counter++;
     }
     //orderFoodRecursive();
 
-    // std::cout << "\n✅ Orders placed for Room " << currentRoom << ":\n";
+    // std::cout << "\nOrders placed for Room " << currentRoom << ":\n";
     // for (auto& item : foodOrders) {
     //     std::cout << "- " << item << "\n";
     // }
@@ -89,5 +89,5 @@ void Service::orderFoodRecursive() {
 }
 
 void Service::requestCleaning() {
-    std::cout << "🧹 Cleaning request for Room " << currentRoom << " has been scheduled.\n";
+    std::cout << "Cleaning request for Room " << currentRoom << " has been scheduled.\n";
 }

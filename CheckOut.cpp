@@ -12,6 +12,7 @@ void CheckOut::checkout() {
     string first_answer;
     cin>>first_answer;
     if (first_answer == "yes") {
+
         cout << "Amount of money you need to pay is ===> 500$"<< endl;
     }else {
         return;
